@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Img- with- Padding</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .banner {
+      max-width: 1200px;
+      margin: 0 auto;
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .banner::after {
+      content: "";
+      display: block;
+      padding-bottom: 70.03%;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <video autoplay loop muted src="/assets/criiio-1.mp4"></video>
+  </div>
+</body>
+
+</html>
