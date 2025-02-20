@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.owl-carousel .card {
+  background-color: #c4bbb0;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  text-align: center;
+}
+
+.owl-carousel .card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+}
+
+.owl-carousel .card h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.owl-carousel .card p {
+  font-size: 18px;
+  line-height: 1.3;
+  color: #686464;
+}
+
+.testimonial-slider .owl-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial-slider .owl-nav button.owl-prev,
+.testimonial-slider .owl-nav button.owl-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.testimonial-slider .owl-nav button.owl-prev {
+  left: -24px;
+}
+
+.testimonial-slider .owl-nav button.owl-next {
+  right: -24px;
+}
