@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+       min-height: 100vh;
+      }
+      .box {
+        flex:0 0 calc(25% - 40px);
+       background-color: #ccc;
+        border: 1px solid #000;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
