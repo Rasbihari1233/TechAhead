@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Tamplate</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+      }
+      .container {
+        width: 1220px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      img {
+        max-width: 100%;
+      }
+      .banner,
+      .main,
+      .unlimited {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+      }
+      .wrapper {
+        display: flex;
+        gap: 20px;
+      }
+      .wrapper .left {
+        font-family: "Open Sans", sans-serif;
+      }
+      .wrapper .left h1 {
+        color: #ffffff;
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+      .wrapper .left p {
+        color: #cdc7c7;
+        font-size: 22px;
+        margin-bottom: 30px;
+      }
+      .wrapper .left a {
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+      }
+      .left .blue {
+        background-color: #0d87f9;
+        color: #ffffff;
+        padding: 12px 24px;
+        margin-right: 10px;
+        border-radius: 3px;
+      }
+      .left .gray {
+        background-color: #3b404c;
+        color: #ffffff;
+        padding: 12px 24px;
+        border-radius: 3px;
+      }
+      .wrapper .right {
+        width: 50%;
+      }
+      .main .card-holder {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+      }
+      .main .card-holder .box {
+        height: 300px;
+        width: calc(33.33% - 10px);
+        text-align: center;
+        padding: 10px;
+      }
+      .main .card-holder .box img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 20px auto;
+      }
+      .card-holder h2 {
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+      .card-holder p {
+        color: #808080;
+      }
+      .text-card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+      }
+      .text-card .text {
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+      }
+      .text-card .text h1 {
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-size: 50px;
+      }
+      .text-card .text p {
+        color: #d1cdcd;
+      }
+      .text-card .card {
+        height: 400px;
+        width: 300px;
+        background-color: #2c3039;
+        padding: 20px;
+      }
+      .text-card .card h1 {
+        color: #ffffff;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #aaa9a9;
+      }
+      .text-card .card p {
+        color: #ffffff;
+        border-bottom: 1px solid #aaa9a9;
+      }
+      .text-card .card .list {
+        list-style: none;
+        color: #aaa9a9;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        margin-top: 25px;
+      }
+      .text-card .list li::before {
+        content: "";
+      }
+      .text-card a {
+        display: inline-block;
+        background-color: #0d87f9;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 60px;
+        margin-top: 25px;
+      }
+      .anch-btn {
+        background-color: #10263a;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        padding: 20px;
+      }
+      .anch-btn h2 {
+        color: #ffffff;
+      }
+      .anch-btn a {
+        background-color: #0d87f9;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+      }
+      @media (max-width: 991px) {
+        .banner .wrapper {
+          flex-direction: column;
+          width: 100%;
+        }
+        .banner .wrapper .right {
+          width: 100%;
+        }
+        .wrapper .left a {
+          width: 100%;
+        }
+        .main .card-holder {
+          flex-direction: column;
+        }
+        .main .card-holder .box {
+          width: 100%;
+        }
+      }
+      @media (max-width: 620px) {
+        .unlimited .anch-btn {
+          flex-direction: column;
+        }
+        .unlimited .anch-btn h2 {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="wrapper">
+          <div class="left">
+            <h1>Landing templates for<br />Startups</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Accusamus molestias<br />
+              sapiente praesentium recusandae tenetur ut cupiditate ipsa
+              eligendi doloribus!
+            </p>
+            <div class="buttons">
+              <a class="blue" href="#">PRE ORDER NOW</a>
+              <a class="gray" href="#">GET IN TOUCH</a>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              src="https://1stwebdesigner.com/wp-content/uploads/2019/07/css-background-effects-thumb.jpg"
+              alt="bg-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="main">
+      <div class="container">
+        <div class="card-holder">
+          <div class="box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3815/3815573.png"
+              alt=""
+            />
+            <h2>Be Productive</h2>
+            <p>
+              Lorem ipsum dolor amet consectetur Lorem, ipsum dolor.<br />adipisicing
+              elit. Soluta, vel. Accusamus Lorem, ipsum dolor.<br />cupiditate
+              laborum ullam velit non Lorem, ipsum dolor.<br />placeat deserunt
+              ratione fugit. Lorem ipsum dolor sit.<br />Lorem, ipsum dolor.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/4038/4038683.png"
+              alt=""
+            />
+            <h2>Be Productive</h2>
+            <p>
+              Lorem ipsum dolor amet consectetur Lorem, ipsum dolor.<br />adipisicing
+              elit. Soluta, vel. Accusamus Lorem, ipsum dolor.<br />cupiditate
+              laborum ullam velit non Lorem, ipsum dolor.<br />placeat deserunt
+              ratione fugit. Lorem ipsum dolor sit.<br />Lorem, ipsum dolor.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/9130/9130402.png"
+              alt=""
+            />
+            <h2>Be Productive</h2>
+            <p>
+              Lorem ipsum dolor amet consectetur Lorem, ipsum dolor.<br />adipisicing
+              elit. Soluta, vel. Accusamus Lorem, ipsum dolor.<br />cupiditate
+              laborum ullam velit non Lorem, ipsum dolor.<br />placeat deserunt
+              ratione fugit. Lorem ipsum dolor sit.<br />Lorem, ipsum dolor.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3963/3963860.png"
+              alt=""
+            />
+            <h2>Be Productive</h2>
+            <p>
+              Lorem ipsum dolor amet consectetur Lorem, ipsum dolor.<br />adipisicing
+              elit. Soluta, vel. Accusamus Lorem, ipsum dolor.<br />cupiditate
+              laborum ullam velit non Lorem, ipsum dolor.<br />placeat deserunt
+              ratione fugit. Lorem ipsum dolor sit.<br />Lorem, ipsum dolor.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/7014/7014920.png"
+              alt=""
+            />
+            <h2>Be Productive</h2>
+            <p>
+              Lorem ipsum dolor amet consectetur Lorem, ipsum dolor.<br />adipisicing
+              elit. Soluta, vel. Accusamus Lorem, ipsum dolor.<br />cupiditate
+              laborum ullam velit non Lorem, ipsum dolor.<br />placeat deserunt
+              ratione fugit. Lorem ipsum dolor sit.<br />Lorem, ipsum dolor.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/588/588846.png"
+              alt=""
+            />
+            <h2>Be Productive</h2>
+            <p>
+              Lorem ipsum dolor amet consectetur Lorem, ipsum dolor.<br />adipisicing
+              elit. Soluta, vel. Accusamus Lorem, ipsum dolor.<br />cupiditate
+              laborum ullam velit non Lorem, ipsum dolor.<br />placeat deserunt
+              ratione fugit. Lorem ipsum dolor sit.<br />Lorem, ipsum dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="unlimited">
+      <div class="container">
+        <div class="text-card">
+          <div class="text">
+            <h1>Unlimited for all</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,<br />
+              quidem facilis? Suscipit atque temporibus, eum dolor
+              consequatur<br />vitae dignissimos officia.
+            </p>
+          </div>
+          <div class="card">
+            <h1>$49/Month</h1>
+            <p>What you will get</p>
+            <ul class="list">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <a href="#">PRE OREDER NOW</a>
+          </div>
+        </div>
+        <div class="anch-btn">
+          <h2>Still not convinced or buyying?</h2>
+          <a href="#">GET IN TOUCH</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
