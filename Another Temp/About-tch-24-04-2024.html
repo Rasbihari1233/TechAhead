@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      img {
+        width: 100%;
+      }
+      .blog-card {
+        font-family: "Open Sans", sans-serif;
+        display: flex;
+        gap: 30px;
+        padding: 30px;
+      }
+      .blog-card .blog-img img {
+        width: 100%;
+        height: 190px;
+        border-radius: 10px;
+      }
+      .blog-card h2 {
+        font-size: 32px;
+        color: #4c4b4b;
+        line-height: 1.5;
+        letter-spacing: 0.1px;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+      .blog-card span {
+        color: #626262;
+      }
+      .blog-card .blog-author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .blog-card .blog-author .imgae {
+        overflow: hidden;
+        background-color: #f4f7f8;
+      }
+      .blog-author .image img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .blog-card .blog-author .name {
+        padding: 10px 25px;
+        background-color: #f4f7f8;
+        border-radius: 30px;
+      }
+      .blog-card:hover{
+        background: #bddafb
+          linear-gradient(295deg, #86b3f9 60%, #bddafb 100%, #90c3fa 100%);
+      }
+      .blog-card:hover .blog-details h2{
+        color: #ffffff;
+      }
+      .blog-card:hover .blog-details span{
+        color: #ffffff;
+      }
+      .blog-card:hover .blog-img img{
+        margin-top: -70px;
+        transform: scale(1.2);
+      }
+      .blog-card .blog-img img {
+        overflow: hidden;
+        transition: all .3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="blog-card">
+          <div class="blog-img">
+            <img
+              src="https://tamediacdn.techaheadcorp.com/wp-content/uploads/2024/03/16034259/1-Featured-Image-10.jpg"
+              alt=""
+            />
+          </div>
+          <div class="blog-details">
+            <h2>
+              Top 6 Cloud Service Providers Who’ll<br />Dominate the Cloud War
+              [Updated 2024]
+            </h2>
+            <span>January 27, 2020</span>
+            &nbsp;|&nbsp;
+            <span>118500 Views</span>
+            <div class="blog-author">
+              <div class="image">
+                <img
+                  src="https://secure.gravatar.com/avatar/a524864cca0d77944f6b6e47e3f0d0e5?s=96&d=mm&r=g"
+                  alt=""
+                />
+              </div>
+              <div class="name">Shanal Aggarwal</div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-img">
+            <img
+              src="https://tamediacdn.techaheadcorp.com/wp-content/uploads/2019/11/09083610/artificial-intelligence-in-healthcare.jpg"
+              alt=""
+            />
+          </div>
+          <div class="blog-details">
+            <h2>
+              11 Ways Artificial Intelligence (AI) is<br />
+              disrupting Healthcare Industry
+            </h2>
+            <span>November 15, 2019</span>
+            &nbsp;|&nbsp;
+            <span>12892 Views</span>
+            <div class="blog-author">
+              <div class="image">
+                <img
+                  src="https://secure.gravatar.com/avatar/e0b17a11e8499bef3db3fbdab0ebd8f7?s=96&d=mm&r=g"
+                  alt=""
+                />
+              </div>
+              <div class="name">Deepak Sinha</div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-img">
+            <img
+              src="https://tamediacdn.techaheadcorp.com/wp-content/uploads/2024/01/16041252/Designing-Beautiful-Interfaces-With-IOS-App-Development.jpg"
+              alt=""
+            />
+          </div>
+          <div class="blog-details">
+            <h2>
+              Designing Beautiful Interfaces With<br />
+              IOS App Development
+            </h2>
+            <span>January 23, 2024</span>
+            &nbsp;|&nbsp;
+            <span>383 Views</span>
+            <div class="blog-author">
+              <div class="image">
+                <img
+                  src="https://secure.gravatar.com/avatar/e0b17a11e8499bef3db3fbdab0ebd8f7?s=96&d=mm&r=g"
+                  alt=""
+                />
+              </div>
+              <div class="name">Deepak Sinha</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
